@@ -43,7 +43,7 @@ const Navbar = () => {
             </button>
             <Link href='/profile'>
               <Image
-                src={"https://lh3.googleusercontent.com/a/ACg8ocLRDReWmg4N9gnWuEhWlbtZMRk-est6xBnSLN_pwr-4289Ylw=s96-c"}
+                src={session?.user.image}
                 width={37}
                 height={37}
                 className='rounded-full'
