@@ -28,6 +28,12 @@ function PromptCard({post,handleTagClick,handleEdit,handleDelete}) {
                   alt="user-image"
                   width={40}
                   height={40}
+                  onClick={()=>{
+                    if(post.creator._id===session?.user.id)
+                      router.push(`/profile`)
+                    else
+                      router.push(`/profile/${post.creator._id}`)
+                  }}
                   className="rounded-full object-contain"
                 />
                 <div className="flex flex-col ">
